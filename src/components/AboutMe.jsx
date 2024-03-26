@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useEffect, useRef } from "react";
 
 // eslint-disable-next-line react/prop-types
@@ -30,8 +31,17 @@ const AboutMe = ({ setIsActiveNav, isActiveNav }) => {
       <div>
         <h1>About Me</h1>
         <p className="secondary">
-          A small river named Duden flows by their place and supplies it with
-          the necessary regelialia.
+          I am a passionate Full Stack Developer specializing in the MERN
+          (MongoDB, Express.js, React.js, Node.js) stack, with expertise in
+          Next.js for building robust web applications. I hold a Bachelor's
+          degree in Information Technology, where I honed my skills in software
+          development and engineering.
+        </p>
+        <p className="secondary">
+          {" "}
+          Additionally, I possess a foundational understanding of React Native
+          for mobile app development and Django for Python-based web
+          applications
         </p>
         <div className="info-container">
           <div className="info-item">

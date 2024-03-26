@@ -164,6 +164,7 @@ nav {
 
     .secondary {
       color: $dark-gray-text;
+      text-align: justify;
     }
 
     .info-container {
@@ -180,7 +181,71 @@ nav {
         }
         .secondary {
           color: $dark-gray-text;
+          text-align: justify;
         }
+      }
+    }
+  }
+}
+
+// My Skills
+.myskills {
+  margin-top: 40px;
+  h1 {
+    text-align: center;
+    font-family: "Poppins-bold";
+    font-size: 34px;
+  }
+
+  .cardsWrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin: 40px 0;
+
+    @include lg {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+      border-radius: 5px;
+      padding: 15px;
+      cursor: pointer;
+
+      h2 {
+        text-align: center;
+        margin: 20px 0;
+        font-family: "Poppins-bold";
+      }
+
+      div {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+
+        .skillCard {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 35px;
+            height: 40px;
+          }
+
+          p {
+            font-weight: bold;
+            font-size: 13px;
+          }
+        }
+      }
+
+      &:hover {
+        background-color: $primary;
+        color: white;
+        transition: all 0.3s ease-in-out;
       }
     }
   }
