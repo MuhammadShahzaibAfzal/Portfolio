@@ -109,28 +109,30 @@ const skillData = [
 ];
 const MySkills = () => {
   return (
-    <div className="container myskills">
-      <h1>My Skills</h1>
-      <div className="cardsWrapper">
-        {skillData.map((skill) => {
-          return (
-            <>
-              <div className="card">
-                <h2>{skill.title}</h2>
-                <div>
-                  {skill.skills.map((i) => {
-                    return (
-                      <div className="skillCard" key={i.title}>
-                        <img src={i.logo} alt="React Logo" />
-                        <p>{i.title}</p>
-                      </div>
-                    );
-                  })}
+    <div className=" myskills">
+      <div className="container">
+        <h1>My Skills</h1>
+        <div className="cardsWrapper">
+          {skillData.map((skill) => {
+            return (
+              <>
+                <div className="card">
+                  <h2>{skill.title}</h2>
+                  <div>
+                    {skill.skills.map((i) => {
+                      return (
+                        <div className="skillCard" key={i.title}>
+                          <img src={i.logo} alt="React Logo" />
+                          <p>{i.title}</p>
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            </>
-          );
-        })}
+              </>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

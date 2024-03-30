@@ -6,6 +6,8 @@ $primary-text: #000000;
 $secondary-text: #b8b8b8;
 $dark-gray-text: #474747;
 
+$light-gray: #f6f6f6;
+
 /* IMPORT FONTS */
 @font-face {
   font-family: "Poppins-regular";
@@ -190,7 +192,8 @@ nav {
 
 // My Skills
 .myskills {
-  margin-top: 40px;
+  padding: 40px 0;
+  background-color: $light-gray;
   h1 {
     text-align: center;
     font-family: "Poppins-bold";
@@ -212,6 +215,7 @@ nav {
       border-radius: 5px;
       padding: 15px;
       cursor: pointer;
+      background-color: white;
 
       h2 {
         text-align: center;
@@ -243,8 +247,8 @@ nav {
       }
 
       &:hover {
-        background-color: $primary;
-        color: white;
+        background-color: $background;
+        // color: white;
         transition: all 0.3s ease-in-out;
       }
     }
